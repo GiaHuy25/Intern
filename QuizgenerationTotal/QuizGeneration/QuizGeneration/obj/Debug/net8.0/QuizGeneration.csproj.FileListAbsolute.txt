@@ -1,0 +1,14 @@
+D:\Intern\QuizGeneration\QuizGeneration\bin\Debug\net8.0\QuizGeneration.exe
+D:\Intern\QuizGeneration\QuizGeneration\bin\Debug\net8.0\QuizGeneration.deps.json
+D:\Intern\QuizGeneration\QuizGeneration\bin\Debug\net8.0\QuizGeneration.runtimeconfig.json
+D:\Intern\QuizGeneration\QuizGeneration\bin\Debug\net8.0\QuizGeneration.dll
+D:\Intern\QuizGeneration\QuizGeneration\bin\Debug\net8.0\QuizGeneration.pdb
+D:\Intern\QuizGeneration\QuizGeneration\obj\Debug\net8.0\QuizGeneration.GeneratedMSBuildEditorConfig.editorconfig
+D:\Intern\QuizGeneration\QuizGeneration\obj\Debug\net8.0\QuizGeneration.AssemblyInfoInputs.cache
+D:\Intern\QuizGeneration\QuizGeneration\obj\Debug\net8.0\QuizGeneration.AssemblyInfo.cs
+D:\Intern\QuizGeneration\QuizGeneration\obj\Debug\net8.0\QuizGeneration.csproj.CoreCompileInputs.cache
+D:\Intern\QuizGeneration\QuizGeneration\obj\Debug\net8.0\QuizGeneration.dll
+D:\Intern\QuizGeneration\QuizGeneration\obj\Debug\net8.0\refint\QuizGeneration.dll
+D:\Intern\QuizGeneration\QuizGeneration\obj\Debug\net8.0\QuizGeneration.pdb
+D:\Intern\QuizGeneration\QuizGeneration\obj\Debug\net8.0\QuizGeneration.genruntimeconfig.cache
+D:\Intern\QuizGeneration\QuizGeneration\obj\Debug\net8.0\ref\QuizGeneration.dll

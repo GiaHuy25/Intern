@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Intern\\QuizGeneration\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C2386E8-E528-4E7E-A199-F751FCA7D19B}|Test\\Test.csproj|d:\\intern\\quizgeneration\\test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C2386E8-E528-4E7E-A199-F751FCA7D19B}|Test\\Test.csproj|solutionrelative:test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07842A46-23F5-4AA5-BAC8-305DFC8E423A}|QuizGeneration\\QuizGeneration.csproj|d:\\intern\\quizgeneration\\quizgeneration\\models\\type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07842A46-23F5-4AA5-BAC8-305DFC8E423A}|QuizGeneration\\QuizGeneration.csproj|solutionrelative:quizgeneration\\models\\type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07842A46-23F5-4AA5-BAC8-305DFC8E423A}|QuizGeneration\\QuizGeneration.csproj|d:\\intern\\quizgeneration\\quizgeneration\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07842A46-23F5-4AA5-BAC8-305DFC8E423A}|QuizGeneration\\QuizGeneration.csproj|solutionrelative:quizgeneration\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07842A46-23F5-4AA5-BAC8-305DFC8E423A}|QuizGeneration\\QuizGeneration.csproj|d:\\intern\\quizgeneration\\quizgeneration\\models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07842A46-23F5-4AA5-BAC8-305DFC8E423A}|QuizGeneration\\QuizGeneration.csproj|solutionrelative:quizgeneration\\models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07842A46-23F5-4AA5-BAC8-305DFC8E423A}|QuizGeneration\\QuizGeneration.csproj|d:\\intern\\quizgeneration\\quizgeneration\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07842A46-23F5-4AA5-BAC8-305DFC8E423A}|QuizGeneration\\QuizGeneration.csproj|solutionrelative:quizgeneration\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07842A46-23F5-4AA5-BAC8-305DFC8E423A}|QuizGeneration\\QuizGeneration.csproj|d:\\intern\\quizgeneration\\quizgeneration\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07842A46-23F5-4AA5-BAC8-305DFC8E423A}|QuizGeneration\\QuizGeneration.csproj|solutionrelative:quizgeneration\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07842A46-23F5-4AA5-BAC8-305DFC8E423A}|QuizGeneration\\QuizGeneration.csproj|d:\\intern\\quizgeneration\\quizgeneration\\services\\initexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07842A46-23F5-4AA5-BAC8-305DFC8E423A}|QuizGeneration\\QuizGeneration.csproj|solutionrelative:quizgeneration\\services\\initexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Type.cs",
+              "DocumentMoniker": "D:\\Intern\\QuizGeneration\\QuizGeneration\\Models\\Type.cs",
+              "RelativeDocumentMoniker": "QuizGeneration\\Models\\Type.cs",
+              "ToolTip": "D:\\Intern\\QuizGeneration\\QuizGeneration\\Models\\Type.cs",
+              "RelativeToolTip": "QuizGeneration\\Models\\Type.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T08:34:43.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InitExam.cs",
+              "DocumentMoniker": "D:\\Intern\\QuizGeneration\\QuizGeneration\\Services\\InitExam.cs",
+              "RelativeDocumentMoniker": "QuizGeneration\\Services\\InitExam.cs",
+              "ToolTip": "D:\\Intern\\QuizGeneration\\QuizGeneration\\Services\\InitExam.cs",
+              "RelativeToolTip": "QuizGeneration\\Services\\InitExam.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T08:31:11.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Intern\\QuizGeneration\\QuizGeneration\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "QuizGeneration\\Models\\Category.cs",
+              "ToolTip": "D:\\Intern\\QuizGeneration\\QuizGeneration\\Models\\Category.cs",
+              "RelativeToolTip": "QuizGeneration\\Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T08:24:16.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Question.cs",
+              "DocumentMoniker": "D:\\Intern\\QuizGeneration\\QuizGeneration\\Models\\Question.cs",
+              "RelativeDocumentMoniker": "QuizGeneration\\Models\\Question.cs",
+              "ToolTip": "D:\\Intern\\QuizGeneration\\QuizGeneration\\Models\\Question.cs",
+              "RelativeToolTip": "QuizGeneration\\Models\\Question.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAYwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T08:20:07.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Answer.cs",
+              "DocumentMoniker": "D:\\Intern\\QuizGeneration\\QuizGeneration\\Models\\Answer.cs",
+              "RelativeDocumentMoniker": "QuizGeneration\\Models\\Answer.cs",
+              "ToolTip": "D:\\Intern\\QuizGeneration\\QuizGeneration\\Models\\Answer.cs",
+              "RelativeToolTip": "QuizGeneration\\Models\\Answer.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T08:17:29.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Intern\\QuizGeneration\\QuizGeneration\\Program.cs",
+              "RelativeDocumentMoniker": "QuizGeneration\\Program.cs",
+              "ToolTip": "D:\\Intern\\QuizGeneration\\QuizGeneration\\Program.cs",
+              "RelativeToolTip": "QuizGeneration\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T08:15:30.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "D:\\Intern\\QuizGeneration\\Test\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "Test\\UnitTest1.cs",
+              "ToolTip": "D:\\Intern\\QuizGeneration\\Test\\UnitTest1.cs",
+              "RelativeToolTip": "Test\\UnitTest1.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T08:14:30.698Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
