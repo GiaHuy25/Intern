@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace QuizGeneration.Models
 {
-    public class Answer
+    public class Level
     {
         public int Id { get; set; }
-        public string Answer_content { get; set; }
-        public Type Answer_type { get; set; }
-
+        public string Name { get; set; }
     }
 }
