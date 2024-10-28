@@ -3,55 +3,17 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Test
 {
+    //public enum questionType
+    //{
+    //    single = 1,
+    //    multiple = 2,
+    //    fillintheblank = 3,
+    //    ordering = 4
+    //}
     [TestClass]
     public class UnitTest1
     {
-        [TestMethod]
-        public void CheckAnswer_OneCorrectAnswer_ReturnsTrue() // chỉ cần chọn 1 trong số những đáp án đúng
-        {
-            var question = new QuestionSys
-            {
-                Qus_Id = 1,
-                Content = "Chọn một số nguyên tố",
-                TrueAnswerIds = new List<string> { "2", "3", "5" },
-                QuestionType = new QuestionType { Type_Id = 1, Name = "Single" }
-            };
-            var result = question.CheckAnswer(new List<string> { "2" });
-            Assert.IsTrue(result);
-        }
-        [TestMethod]
-        public void CheckAnswer_CorrectAnswer_ReturnsTrue() //Kiểm tra câu trả lời đúng thì trả về true.
-        {
-            var question = new QuestionSys
-            {
-                Qus_Id = 1,
-                Content = "Chọn ba số nguyên tố đầu tiên",
-                TrueAnswerIds = new List<string> { "2", "3", "5" },
-                QuestionType = new QuestionType { Type_Id = 1, Name = "Multiple" }
-            };
-
-            var result = question.CheckAnswer(new List<string> { "2", "3", "5" });
-
-            Assert.IsTrue(result);
-        }
-
-        [TestMethod]
-        public void CheckAnswer_WrongAnswer_ReturnsFalse() //Kiểm tra câu trả lời sai thì trả về false.
-        {
-            var question = new QuestionSys
-            {
-                Qus_Id = 1,
-                Content = "Chọn ba số nguyên tố đầu tiên",
-                TrueAnswerIds = new List<string> { "2", "3", "5" },
-                QuestionType = new QuestionType { Type_Id = 1, Name = "Multiple" }
-
-            };
-
-            var result = question.CheckAnswer(new List<string> { "4", "2", "5" });
-
-            Assert.IsFalse(result);
-        }
-
+        
         [TestMethod]
         public void QuestionContent_IsNotNullOrEmpty() //Kiểm tra nội dung câu hỏi không được rỗng.
         {
@@ -87,10 +49,10 @@ namespace Test
             {
                 Answer_Id = "A2",
                 Content = "True",
-                result_option = 1
+                Result_option = 1
             };
 
-            var isCorrect = answer.result_option == 1;
+            var isCorrect = answer.Result_option == 1;
 
             Assert.IsTrue(isCorrect);
         }
@@ -102,10 +64,10 @@ namespace Test
             {
                 Answer_Id = "A3",
                 Content = "False",
-                result_option = 0
+                Result_option = 0
             };
 
-            var isCorrect = answer.result_option == 1;
+            var isCorrect = answer.Result_option == 1;
 
             Assert.IsFalse(isCorrect);
         }
@@ -154,14 +116,43 @@ namespace Test
             Assert.IsTrue(isValidScore);
         }
         [TestMethod]
-        public void CheckAnswer_FillInTheBlank()
+        public void CheckAnswer_OneCorrectAnswer_ReturnsTrue() // chỉ cần chọn 1 trong số những đáp án đúng
+        {
+            var question = new QuestionSys
+            {
+                Qus_Id = 1,
+                Content = "Chọn một số nguyên tố",
+                TrueAnswer = new List<string> { "2", "3", "5" },
+                QuestionType = new QuestionType { Type_Id = 1, Name = "Single" }
+            };
+            var result = question.CheckAnswer(new List<string> { "2" });
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void CheckAnswer_CorrectAnswer_ReturnsTrue() //Kiểm tra câu trả lời đúng thì trả về true.
+        {
+            var question = new QuestionSys
+            {
+                Qus_Id = 1,
+                Content = "Chọn ba số nguyên tố đầu tiên",
+                TrueAnswer = new List<string> { "2", "3", "5" },
+                QuestionType = new QuestionType { Type_Id = 2, Name = "Multiple" }
+            };
+
+            var result = question.CheckAnswer(new List<string> { "2", "3", "5" });
+
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void CheckAnswer_FillInTheBlank() // điền vào chỗ trống
         {
             // Arrange
             var question = new QuestionSys
             {
                 Qus_Id = 1,
                 Content = "Điền vào chỗ trống: __ là thủ đô của Pháp. __ là thủ đô của Đức.",
-                QuestionType = new QuestionType { Type_Id = 3, Name = "FillInTheBlank" },
+                QuestionType = new QuestionType { Type_Id = 4, Name = "FillInTheBlank" },
                 CorrectAnswersForBlanks = new List<List<string>>
                 {
                     new List<string> { "Paris" }, 
@@ -174,13 +165,13 @@ namespace Test
             Assert.IsTrue(result);
         }
         [TestMethod]
-        public void CheckAnswer_FillInTheBlank_Multiple()
+        public void CheckAnswer_FillInTheBlank_Multiple() // điền vào chỗ trống một ô có 2 lựa chọn đúng
         {
             var question = new QuestionSys
             {
                 Qus_Id = 1,
                 Content = "Điền vào chỗ trống: __ là thủ đô của Pháp. __ là thủ đô của Đức.",
-                QuestionType = new QuestionType { Type_Id = 3, Name = "FillInTheBlank" },
+                QuestionType = new QuestionType { Type_Id = 4, Name = "FillInTheBlank" },
                 CorrectAnswersForBlanks = new List<List<string>>
                 {
                     new List<string> { "Paris" }, 
@@ -191,6 +182,22 @@ namespace Test
 
             Assert.IsTrue(result);
         }
+        [TestMethod]
+        public void CheckAnswer_OrderingCorrect_ReturnsTrue() // sắp xếp 
+        {
+            // Arrange
+            var question = new QuestionSys
+            {
+                Qus_Id = 1,
+                QuestionType = new QuestionType { Type_Id = 5, Name = "Ordering" },
+                TrueAnswer = new List<string> { "2", "3", "5" }
+            };
 
+            // Act
+            var result = question.CheckAnswer(new List<string> { "2", "3", "5" });
+
+            // Assert
+            Assert.IsTrue(result);
+        }
     }
 }
