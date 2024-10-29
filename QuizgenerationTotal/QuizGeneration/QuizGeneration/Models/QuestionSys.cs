@@ -20,7 +20,7 @@ namespace QuizGeneration.Models
 
         public bool CheckAnswer(List<string> Answer)
         {
-            if (QuestionType != null && QuestionType.Type_Id == 1) // Chỉ cần một đáp án đúng
+            if (QuestionType != null && QuestionType.Equals(questionType.Single)) // Chỉ cần một đáp án đúng
             {
                
                 foreach (var answer in Answer)
@@ -32,13 +32,13 @@ namespace QuizGeneration.Models
                 }
                 return false;
             }
-            else if (QuestionType != null && (QuestionType.Type_Id == 2 || QuestionType.Type_Id == 5)) // Tất cả đáp án phải đúng
+            else if (QuestionType != null && (QuestionType.Equals(questionType.multiple) || QuestionType.Equals(questionType.ordering))) // Tất cả đáp án phải đúng
             {
                 if (TrueAnswer.Count != Answer.Count)
                     return false;
 
                 // Nếu là "Ordering", yêu cầu đúng thứ tự
-                if (QuestionType.Type_Id == 5)
+                if (QuestionType.Equals(questionType.ordering))
                 {
                     for (int i = 0; i < TrueAnswer.Count; i++)
                     {
@@ -59,7 +59,7 @@ namespace QuizGeneration.Models
                     return true;
                 }
             }
-            else if (QuestionType != null && QuestionType.Type_Id == 4)// điền vào chỗ trống
+            else if (QuestionType != null && QuestionType.Equals(questionType.fillinblank))// điền vào chỗ trống
             {
                 if (CorrectAnswersForBlanks.Count != Answer.Count)
                     return false;

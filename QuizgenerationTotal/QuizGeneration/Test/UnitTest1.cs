@@ -123,7 +123,7 @@ namespace Test
                 Qus_Id = 1,
                 Content = "Chọn một số nguyên tố",
                 TrueAnswer = new List<string> { "2", "3", "5" },
-                QuestionType = new QuestionType { Type_Id = 1, Name = "Single" }
+                QuestionType = new QuestionType(questionType.Single)
             };
             var result = question.CheckAnswer(new List<string> { "2" });
             Assert.IsTrue(result);
@@ -136,7 +136,7 @@ namespace Test
                 Qus_Id = 1,
                 Content = "Chọn ba số nguyên tố đầu tiên",
                 TrueAnswer = new List<string> { "2", "3", "5" },
-                QuestionType = new QuestionType { Type_Id = 2, Name = "Multiple" }
+                QuestionType = new QuestionType (questionType.multiple)
             };
 
             var result = question.CheckAnswer(new List<string> { "2", "3", "5" });
@@ -152,7 +152,7 @@ namespace Test
             {
                 Qus_Id = 1,
                 Content = "Điền vào chỗ trống: __ là thủ đô của Pháp. __ là thủ đô của Đức.",
-                QuestionType = new QuestionType { Type_Id = 4, Name = "FillInTheBlank" },
+                QuestionType = new QuestionType(questionType.fillinblank),
                 CorrectAnswersForBlanks = new List<List<string>>
                 {
                     new List<string> { "Paris" }, 
@@ -171,7 +171,7 @@ namespace Test
             {
                 Qus_Id = 1,
                 Content = "Điền vào chỗ trống: __ là thủ đô của Pháp. __ là thủ đô của Đức.",
-                QuestionType = new QuestionType { Type_Id = 4, Name = "FillInTheBlank" },
+                QuestionType = new QuestionType (questionType.fillinblank),
                 CorrectAnswersForBlanks = new List<List<string>>
                 {
                     new List<string> { "Paris" }, 
@@ -189,7 +189,7 @@ namespace Test
             var question = new QuestionSys
             {
                 Qus_Id = 1,
-                QuestionType = new QuestionType { Type_Id = 5, Name = "Ordering" },
+                QuestionType = new QuestionType(questionType.ordering),
                 TrueAnswer = new List<string> { "2", "3", "5" }
             };
 

@@ -10,5 +10,6 @@ namespace QuizGeneration.Models
     {
         public int Quiz_Id { get; set; }
         public string Name { get; set; }
+        public List<QuestionSys> QuestionSys { get; set; }
     }
 }
