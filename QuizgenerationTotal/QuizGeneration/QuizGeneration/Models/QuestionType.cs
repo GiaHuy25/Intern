@@ -15,12 +15,4 @@ namespace QuizGeneration.Models
         ordering = 4
 
     }
-    public class QuestionType
-    {
-        public questionType questionType { get; set; }
-
-        public QuestionType(questionType questiontype) {
-            questionType = questiontype;
-        }
-    }
 }

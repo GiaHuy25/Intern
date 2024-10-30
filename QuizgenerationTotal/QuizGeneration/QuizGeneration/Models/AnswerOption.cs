@@ -8,11 +8,18 @@ namespace QuizGeneration.Models
 {
     public class AnswerOption
     {
-        public string Answer_Id { get; set; }
+        public string AnswerId { get; set; }
+        public int AnswerType { get; set; }
+        public int QusId { get; set; }
         public string Content { get; set; }
-        public string Answer_Type { get; set; }
-        public int Qus_Id { get; set; }
-        public int Result_option { get; set; } 
+        public int ResultOption { get; set; } // Giá trị khác 0 là đáp án đúng
+
+        public AnswerOption(string answerId, string content, int resultOption)
+        {
+            AnswerId = answerId;
+            Content = content;
+            ResultOption = resultOption;
+        }
 
     }
 }

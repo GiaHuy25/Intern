@@ -10,72 +10,87 @@ namespace QuizGeneration.Models
     {
         public int Qus_Id { get; set; }
         public string Content { get; set; }
-        public QuestionType QuestionType { get; set; }
+        public questionType QuestionType { get; set; }
         public int Cate_Id { get; set; }
         public int Level_Id { get; set; }
         public int? Tag_Id { get; set; }
 
-        public List<List<string>> CorrectAnswersForBlanks { get; set; } = new List<List<string>>();
-        public List<string> TrueAnswer { get; set; } = new List<string>();
+        public List<AnswerOption> AnswerOptions { get; set; } = new List<AnswerOption>();
 
-        public bool CheckAnswer(List<string> Answer)
+        public bool CheckAnswer(List<string> answerIds)
         {
-            if (QuestionType != null && QuestionType.Equals(questionType.Single)) // Chỉ cần một đáp án đúng
-            {
-               
-                foreach (var answer in Answer)
-                {
-                    if (TrueAnswer.Contains(answer))
-                    {
-                        return true;
-                    }
-                }
-                return false;
-            }
-            else if (QuestionType != null && (QuestionType.Equals(questionType.multiple) || QuestionType.Equals(questionType.ordering))) // Tất cả đáp án phải đúng
-            {
-                if (TrueAnswer.Count != Answer.Count)
-                    return false;
+            List<AnswerOption> correctAnswers = AnswerOptions
+                .Where(a => a.ResultOption != 0)
+                .OrderBy(a => a.ResultOption)
+                .ToList();
 
-                // Nếu là "Ordering", yêu cầu đúng thứ tự
-                if (QuestionType.Equals(questionType.ordering))
-                {
-                    for (int i = 0; i < TrueAnswer.Count; i++)
-                    {
-                        if (TrueAnswer[i] != Answer[i])
-                        {
-                            return false;
-                        }
-                    }
-                    return true;
-                }
-                else // Nếu là "Multiple", không yêu cầu đúng thứ tự
-                {
-                    foreach (var trueanswer in TrueAnswer)
-                    {
-                        if (!Answer.Contains(trueanswer))
-                            return false;
-                    }
-                    return true;
-                }
-            }
-            else if (QuestionType != null && QuestionType.Equals(questionType.fillinblank))// điền vào chỗ trống
+            if (QuestionType == questionType.Single)
             {
-                if (CorrectAnswersForBlanks.Count != Answer.Count)
-                    return false;
+                return answerIds.Any(answerId => correctAnswers.Any(ca => ca.AnswerId == answerId));
+            }
 
-                for (int i = 0; i < CorrectAnswersForBlanks.Count; i++)
+            else if (QuestionType == questionType.multiple)
+            {
+                if (correctAnswers.Count != answerIds.Count)
                 {
-                    var correctAnswersForPosition = CorrectAnswersForBlanks[i]; 
-                    var answerForPosition = Answer[i]; 
-                    if (!correctAnswersForPosition.Contains(answerForPosition))
+                    return false;
+                }
+
+                return correctAnswers.All(correctAnswer => answerIds.Contains(correctAnswer.AnswerId));
+            }
+
+            else if (QuestionType == questionType.ordering)
+            {
+                int totalPositions = correctAnswers.Max(a => a.ResultOption);
+
+                if (answerIds.Count != totalPositions)
+                {
+                    return false;
+                }
+
+                for (int position = 1; position <= totalPositions; position++)
+                {
+                    var correctOptionsForPosition = correctAnswers
+                        .Where(a => a.ResultOption == position)
+                        .Select(a => a.AnswerId)
+                        .ToList();
+
+                    if (position > answerIds.Count || !correctOptionsForPosition.Contains(answerIds[position - 1]))
                     {
                         return false;
                     }
                 }
-                return true;
-            }    
+
+                return true; 
+            }
+
+            else if (QuestionType == questionType.fillinblank)
+            {
+                int totalPositions = correctAnswers.Max(a => a.ResultOption);
+
+                if (answerIds.Count != totalPositions)
+                {
+                    return false;
+                }
+
+                for (int position = 1; position <= totalPositions; position++)
+                {
+                    var correctOptionsForPosition = correctAnswers
+                        .Where(a => a.ResultOption == position)
+                        .Select(a => a.AnswerId)
+                        .ToList();
+
+                    if (position > answerIds.Count || !correctOptionsForPosition.Contains(answerIds[position - 1]))
+                    {
+                        return false;
+                    }
+                }
+
+                return true; 
+            }
+
             return false;
         }
     }
 }
+

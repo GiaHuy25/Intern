@@ -8,9 +8,20 @@ namespace QuizGeneration.Models
 {
     public class QuizQuestion
     {
-        public int Quiz_question_Id { get; set; }
-        public int Quiz_Id { get; set; }
-        public int Qus_Id { get; set; }
-        public int Score { get; set; }
+        public int QuizQuestionId { get; set; } 
+        public QuestionSys Question { get; set; } 
+        public int Score { get; set; } 
+
+        public QuizQuestion(int quizQuestionId, QuestionSys question, int score)
+        {
+            QuizQuestionId = quizQuestionId;
+            Question = question;
+            Score = score;
+        }
+        public bool CheckAnswer(List<string> userAnswers)
+        {
+            return Question.CheckAnswer(userAnswers);
+        }
     }
+
 }
