@@ -46,7 +46,8 @@
               "RelativeToolTip": "QuizGeneration\\Models\\quiz_question.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T07:00:16.144Z"
+              "WhenOpened": "2024-11-01T07:00:16.144Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -58,7 +59,8 @@
               "RelativeToolTip": "QuizGeneration\\Models\\QuestionSys.cs",
               "ViewState": "AgIAACUAAAAAAAAAAADwv1UAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T06:47:06.212Z"
+              "WhenOpened": "2024-11-01T06:47:06.212Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -70,7 +72,8 @@
               "RelativeToolTip": "Test\\Check_answer_test.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T15:01:55.607Z"
+              "WhenOpened": "2024-10-30T15:01:55.607Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -82,7 +85,8 @@
               "RelativeToolTip": "Test\\Create_and_calculate_score_test.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAgwCEAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T14:49:52.458Z"
+              "WhenOpened": "2024-10-30T14:49:52.458Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -92,7 +96,7 @@
               "RelativeDocumentMoniker": "QuizGeneration\\Models\\quiz_Test.cs",
               "ToolTip": "D:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\QuizGeneration\\Models\\quiz_Test.cs",
               "RelativeToolTip": "QuizGeneration\\Models\\quiz_Test.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAAADQAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T11:44:50.679Z",
               "EditorCaption": ""

@@ -27,7 +27,7 @@ namespace Test
                 }
                 };
 
-                var result = question.CheckAnswer(new List<string> { "A" });
+                var result = question.CheckAnswer(new List<string> { "C" });
 
                 Assert.IsTrue(result);
             }
@@ -49,7 +49,7 @@ namespace Test
                 }
                 };
 
-                var result = question.CheckAnswer(new List<string> { "C", "B", "A" });
+                var result = question.CheckAnswer(new List<string> { "A", "B", "C" });
 
                 Assert.IsTrue(result);
             }
