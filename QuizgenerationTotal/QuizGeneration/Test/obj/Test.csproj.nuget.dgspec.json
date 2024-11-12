@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\Test\\Test.csproj": {}
+    "E:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\Test\\Test.csproj": {}
   },
   "projects": {
-    "D:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\QuizGeneration\\QuizGeneration.csproj": {
+    "E:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\QuizGeneration\\QuizGeneration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\QuizGeneration\\QuizGeneration.csproj",
+        "projectUniqueName": "E:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\QuizGeneration\\QuizGeneration.csproj",
         "projectName": "QuizGeneration",
-        "projectPath": "D:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\QuizGeneration\\QuizGeneration.csproj",
+        "projectPath": "E:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\QuizGeneration\\QuizGeneration.csproj",
         "packagesPath": "C:\\Users\\Admini\\.nuget\\packages\\",
-        "outputPath": "D:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\QuizGeneration\\obj\\",
+        "outputPath": "E:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\QuizGeneration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admini\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "D:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\Test\\Test.csproj": {
+    "E:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\Test\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\Test\\Test.csproj",
+        "projectUniqueName": "E:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\Test\\Test.csproj",
         "projectName": "Test",
-        "projectPath": "D:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\Test\\Test.csproj",
+        "projectPath": "E:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\Test\\Test.csproj",
         "packagesPath": "C:\\Users\\Admini\\.nuget\\packages\\",
-        "outputPath": "D:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\Test\\obj\\",
+        "outputPath": "E:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admini\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -90,8 +90,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\QuizGeneration\\QuizGeneration.csproj": {
-                "projectPath": "D:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\QuizGeneration\\QuizGeneration.csproj"
+              "E:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\QuizGeneration\\QuizGeneration.csproj": {
+                "projectPath": "E:\\Intern\\Intern\\QuizgenerationTotal\\QuizGeneration\\QuizGeneration\\QuizGeneration.csproj"
               }
             }
           }
